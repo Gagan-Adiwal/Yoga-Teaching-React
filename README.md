@@ -16,8 +16,7 @@ Built with **React + Tailwind CSS** and integrated with **React Router** for smo
   - Classes  
   - Courses  
   - About  
-  - Contact  
-  - Terms & Privacy  
+  - Contact 
 
 ---
 
