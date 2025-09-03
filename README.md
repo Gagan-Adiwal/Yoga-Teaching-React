@@ -38,4 +38,4 @@ Built with **React + Tailwind CSS** and integrated with **React Router** for smo
 
 ## 📜 **License**
 This project is licensed under the **MIT License**.  
-Feel free to use and customize it.  
+Feel free to use for educational purpose.  
