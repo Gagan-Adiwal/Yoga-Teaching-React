@@ -1,27 +1,12 @@
-# 🧘 YogaFlow – Online Yoga Classes & Courses
+# React + Vite
 
-YogaFlow is a responsive React web app for learning and practicing yoga.  
-It provides **live classes, structured courses, and flexible schedules** for all levels.  
-Built with **React + Tailwind CSS** and integrated with **React Router** for smooth navigation.  
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## 🚀 Features
-- 🌐 Fully responsive design (mobile, tablet, desktop)  
-- 📅 Live classes & structured yoga courses  
-- 💳 (Future-ready) Payment gateway integration for paid courses  
-- 🖼️ Modern UI built with TailwindCSS  
-- 📌 Separate pages:  
-  - Home  
-  - Classes  
-  - Courses  
-  - About  
-  - Contact 
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
----
+## Expanding the ESLint configuration
 
-## 🛠️ Tech Stack
-- ⚛️ React.js  
-- 🎨 Tailwind CSS  
-- 📦 React Router DOM  
-- 🎭 Lucide React Icons  
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
