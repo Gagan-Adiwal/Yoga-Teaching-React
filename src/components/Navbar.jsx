@@ -20,10 +20,10 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <nav className="space-x-6 hidden md:flex">
           <a href="/" className="hover:text-pink-600">Home</a>
-          <a href="/classes" className="hover:text-pink-600">Classes</a>
-          <a href="/courses" className="hover:text-pink-600">Courses</a>
-          <a href="/about" className="hover:text-pink-600">About</a>
-          <a href="/contact" className="hover:text-pink-600">Contact</a>
+          <a href="/pages/classes" className="hover:text-pink-600">Classes</a>
+          <a href="/pages/courses" className="hover:text-pink-600">Courses</a>
+          <a href="/pages/about" className="hover:text-pink-600">About</a>
+          <a href="/pages/contact" className="hover:text-pink-600">Contact</a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -40,13 +40,14 @@ export default function Navbar() {
         <div className="md:hidden bg-white shadow-lg">
           <nav className="flex flex-col space-y-4 p-4">
             <a href="/" className="hover:text-pink-600" onClick={() => setIsOpen(false)}>Home</a>
-            <a href="/classes" className="hover:text-pink-600" onClick={() => setIsOpen(false)}>Classes</a>
-            <a href="/courses" className="hover:text-pink-600" onClick={() => setIsOpen(false)}>Courses</a>
-            <a href="/about" className="hover:text-pink-600" onClick={() => setIsOpen(false)}>About</a>
-            <a href="/contact" className="hover:text-pink-600" onClick={() => setIsOpen(false)}>Contact</a>
+            <a href="/pages/classes" className="hover:text-pink-600" onClick={() => setIsOpen(false)}>Classes</a>
+            <a href="/pages/courses" className="hover:text-pink-600" onClick={() => setIsOpen(false)}>Courses</a>
+            <a href="/pages/about" className="hover:text-pink-600" onClick={() => setIsOpen(false)}>About</a>
+            <a href="/pages/contact" className="hover:text-pink-600" onClick={() => setIsOpen(false)}>Contact</a>
           </nav>
         </div>
       )}
     </header>
   );
 }
+
