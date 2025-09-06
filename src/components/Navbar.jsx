@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,11 +20,11 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <nav className="space-x-6 hidden md:flex">
-          <a href="/" className="hover:text-pink-600">Home</a>
-          <a href="/classes" className="hover:text-pink-600">Classes</a>
-          <a href="/courses" className="hover:text-pink-600">Courses</a>
-          <a href="/about" className="hover:text-pink-600">About</a>
-          <a href="/contact" className="hover:text-pink-600">Contact</a>
+          <Link to="/" className="hover:text-pink-600">Home</Link>
+          <Link to="/classes" className="hover:text-pink-600">Classes</Link>
+          <Link to="/courses" className="hover:text-pink-600">Courses</Link>
+          <Link to="/about" className="hover:text-pink-600">About</Link>
+          <Link to="/contact" className="hover:text-pink-600">Contact</Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -39,16 +40,17 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-white shadow-lg">
           <nav className="flex flex-col space-y-4 p-4">
-            <a href="/" className="hover:text-pink-600" onClick={() => setIsOpen(false)}>Home</a>
-            <a href="/classes" className="hover:text-pink-600" onClick={() => setIsOpen(false)}>Classes</a>
-            <a href="/courses" className="hover:text-pink-600" onClick={() => setIsOpen(false)}>Courses</a>
-            <a href="/about" className="hover:text-pink-600" onClick={() => setIsOpen(false)}>About</a>
-            <a href="/contact" className="hover:text-pink-600" onClick={() => setIsOpen(false)}>Contact</a>
+            <Link to="/" className="hover:text-pink-600" onClick={() => setIsOpen(false)}>Home</Link>
+            <Link to="/classes" className="hover:text-pink-600" onClick={() => setIsOpen(false)}>Classes</Link>
+            <Link to="/courses" className="hover:text-pink-600" onClick={() => setIsOpen(false)}>Courses</Link>
+            <Link to="/about" className="hover:text-pink-600" onClick={() => setIsOpen(false)}>About</Link>
+            <Link to="/contact" className="hover:text-pink-600" onClick={() => setIsOpen(false)}>Contact</Link>
           </nav>
         </div>
       )}
     </header>
   );
 }
+
 
 
